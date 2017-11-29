@@ -1,0 +1,13 @@
+
+Multichar_Symbols
+
+%<NOM%>
+
+LEXICON Num_CAT
+
+%<NOM%>: Num;
+
+LEXICON Num
+
+NumDeriv;
+Nom ;

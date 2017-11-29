@@ -1,0 +1,32 @@
+Alphabet
+
+A B C Ç D E F G Ğ H I İ J K L M N O Ö P R S Ş T U Ü V Y Z Q Ə X
+a b c ç d e f g ğ h ı i j k l m n o ö p r s ş t u ü v y z q ə x
+%<VERB%>:0
+%{A%}
+%{I%}
+%{Q%}
+%{K%}
+%{N%}
+%{C%}
+%{SPC%}
+%{D%}
+%{DASH%}
+%{synIn%}
+%{synIv%}
+%-
+;
+
+Sets
+
+Vow = A E I İ O Ö U Ü Ə
+		a e ı i o ö u ü ə ;
+
+Rules
+
+
+"ChangeQ"
+q:%{Q%} <=> _ \[%<VERB%>: ];
+
+"ChangeK"
+k:%{K%} <=> _ \[%<VERB%>: ];

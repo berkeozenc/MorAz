@@ -1,0 +1,127 @@
+Multichar_Symbols
+
+%<Dim%>
+%<Occup%>
+%<With%>
+%<Without%>
+%<State%>
+%<Like1%>
+%<Like2%>
+
+%<Tuple%>
+%<Ord%>
+
+%<acq%>
+%<Bec%>
+%<add%>
+
+%<Rel%>
+
+%<AgtR%>
+%<InfA%>
+%<Inf1%>
+%<Inf2%>
+%<AgtP%>
+%<AgtF%>
+%<AgtA%>
+%<AgtL%>
+%<Inf3%>
+%<AgtI%>
+
+%<While%>
+%<After%>
+%<Since%>
+%<Untill%>
+%<like%>
+%<AsIf%>
+
+%<AgtA%>
+
+%<Bfr1%>
+%<Bfr2%>
+
+%<ADV%>
+%<NOM%>
+%<VERB%>
+
+
+
+
+
+LEXICON NumDeriv
+
+%<Tuple%>:%-%(%{I%}%)z Nom_CAT;
+%<Ord%>:%-%(%{I%}%)nc%{I%} Nom_CAT;
+
+LEXICON Nom_CAT
+
+%<NOM%>: Nom;
+
+LEXICON Nom
+
+Nom' ; 
+%<Dim%>:%-c%{I%}%{Q%} Nom'_CAT ;
+%<Occup%>:%-ç%{I%} Nom'_CAT ;
+%<With%>:%-l%{I%} Nom'_CAT ;
+%<Without%>:%-s%{I%}z Nom'_CAT ;
+%<State%>:%-l%{I%}%{Q%} Nom'_CAT ;
+%<Like1%>:%-yana Nom'_CAT ;
+%<Like2%>:%-sayaq Nom'_CAT ;
+
+LEXICON CaseDeriv
+
+%<Bec%>:%-l%{A%}ş VS1_CAT;
+
+LEXICON Case2Deriv
+
+%<Rel%>:%-k%{I%} Nom'_CAT;
+
+LEXICON P5
+
+%<AsIf%>:%-c%{A%}s%{I%}n%{A%} Adv_CAT;
+
+LEXICON Adv_CAT
+
+%<ADV%>: Adv;
+
+
+LEXICON Adv
+%<PRED%>: pred;
+#;
+
+LEXICON TAMP1Deriv
+
+%<AgtR%>:%-%(y%)%{I%}c%{I%} Nom_CAT;
+%<InfA%>:%-d%{I%}%{Q%} Nom_CAT;
+%<Inf1%>:%-m%{A%} Nom_CAT;
+%<Inf2%>:%-m%{A%}%{Q%} Nom_CAT;
+%<AgtP%>:%-m%{I%}ş Nom_CAT;
+%<AgtF%>:%-%(y%)%{A%}c%{A%}%{Q%} Nom_CAT;
+%<InfF%>:%-%(y%)%{A%}c%{A%}%{Q%} Nom_CAT;
+%<AgtA%>:%-%(y%)%{A%}n Nom_CAT;
+%<AgtL%>:%-%(y%)%{A%}s%{I%} Nom_CAT;
+%<Inf3%>:%-%(y%)%{I%}ş Nom_CAT;
+%<AgtI%>:%-%(y%)%{I%}r Nom_CAT;
+%<While%>:%-%(y%)%{A%}r%{A%}%{Q%} Adv_CAT;
+%<After%>:%-%(y%)%{I%}nc%{A%} Adv_CAT;
+%<Since%>:%-%(y%)%{A%}l%{I%} Adv_CAT;
+%<Untill%>:%-%(y%)%{I%}nc%{A%}y%{A%} Adv_CAT;
+
+LEXICON TAMP3Deriv
+
+%<AgtA%>:%-%(%{A%}%)r Nom_CAT;
+%<Bfr1%>:%-m%{A%}d%{A%}n Adv_CAT;
+%<Bfr2%>:%-m%{I%}şd%{A%}n Adv_CAT;
+
+
+LEXICON TAMP2Deriv
+
+%<AgtA%>:%-z Nom_CAT;
+
+
+
+
+
+
+
+

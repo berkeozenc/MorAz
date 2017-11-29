@@ -1,0 +1,46 @@
+Alphabet
+
+A B C Ç D E F G Ğ H I İ J K L M N O Ö P R S Ş T U Ü V Y Z Q Ə X
+a b c ç d e f g ğ h ı i j k l m n o ö p r s ş t u ü v y z q ə x
+%{A%}
+%{I%}
+%{Q%}
+%{K%}
+%{N%}
+%{C%}
+%{SPC%}
+%{D%}
+%{synIn%}:%{I%}
+%{synİn%}:%{I%}
+%{synUn%}:%{I%}
+%{synÜn%}:%{I%}
+%{synIv%}:%{I%}
+%{synUv%}:%{I%}
+%{DASH%}
+%-
+;
+
+Sets
+
+sufVow = %{I%} %{A%} ;
+
+Rules
+
+"Del synIn"
+%{synIn%}:0 <=> _ [ : ] [%-: ]* [sufVow: ] [ : ];
+
+"Del synİn"
+%{synİn%}:0 <=> _ [ : ] [%-: ]* [sufVow: ] [ : ];
+
+"Del synUn"
+%{synUn%}:0 <=> _ [ : ] [%-: ]* [sufVow: ] [ : ];
+
+"Del synÜn"
+%{synÜn%}:0 <=> _ [ : ] [%-: ]* [sufVow: ] [ : ];
+
+
+"Del synIv"
+%{synIv%}:0 <=> _ [ : ] [%-: ]* [%{I%}: ] [ : ];
+
+"Del synUv"
+%{synUv%}:0 <=> _ [ : ] [%-: ]* [%{I%}: ] [ : ];

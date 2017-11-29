@@ -1,0 +1,39 @@
+Alphabet
+
+A B C Ç D E F G Ğ H I İ J K L M N O Ö P R S Ş T U Ü V Y Z Q Ə X
+a b c ç d e f g ğ h ı i j k l m n o ö p r s ş t u ü v y z q ə x
+%{A%}
+%{I%}
+%{Q%}
+%{C%}:c
+%{N%}:d
+%{K%}
+%{SPC%}
+%{D%}
+%{DASH%}
+%-
+;
+
+Sets
+
+Cons = B C Ç D F G Ğ H J K L M N P R S Ş T V Y Z Q X 
+		b c ç d f g ğ h j k l m n p r s ş t v y z q x %{Q%} %{K%}; 
+
+back = A I O U 
+		a ı o u ;
+
+front = E İ Ö Ü Ə
+		e i ö ü ə ;
+
+
+Rules
+
+"ChangeN"
+
+%{N%}:n <=>  [ m: | n: ] [%-: ]+ _ ;
+
+"ChangeQ"
+%{Q%}:%{K%} <=> [front: ] _  ;
+
+"ChangeC"
+%{C%}:ç <=> [back: ] [Cons: ]* [%-: ]* _ ;

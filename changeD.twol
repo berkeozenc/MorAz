@@ -1,0 +1,24 @@
+Alphabet
+
+A B C Ç D E F G Ğ H I İ J K L M N O Ö P R S Ş T U Ü V Y Z Q Ə X
+a b c ç d e f g ğ h ı i j k l m n o ö p r s ş t u ü v y z q ə x
+%{A%}
+%{I%}
+%{K%}
+%-:0
+%{SPC%}:% 
+%{C%}
+%{D%}:t
+%{DASH%}
+;
+
+Sets
+
+Vow = I İ U Ü
+		ı i u ü ;
+
+Rules
+
+"ChangeD"
+%{D%}:d <=>  [Vow: ] [%-: ]* [Vow: ]* _ [%-: ]+ [Vow: ] [l: ] ;
+

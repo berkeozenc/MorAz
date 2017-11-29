@@ -1,0 +1,27 @@
+Multichar_Symbols
+
+%<Cpl%:Aor%>
+%{SPC%}
+
+LEXICON pred
+
+%<Cpl%:Aor%>:%-d%{I%}r C4;
+%<Cpl%:Narr%>:%-%(y%)m%{I%}ş C6;
+%<Cpl%:Past%>:%-%{SPC%}%{I%}d%{I%} C8;
+%<Cpl%:Aor%>:%- C9;
+
+LEXICON C8
+
+%<Prsn%:1s%>:%-m P3;
+%<Prsn%:2s%>:%-n P3;
+%<Prsn%:3s%>:%- P3;
+%<Prsn%:1p%>:%-%{Q%} P3;
+%<Prsn%:2p%>:%-n%{I%}z P3;
+%<Prsn%:3p%>:%-l%{A%}r P3;
+
+LEXICON C9
+
+%<Prsn%:1s%>:%-%(y%)%{A%}m P3;
+%<Prsn%:2s%>:%-s%{A%}n P3;
+%<Prsn%:1p%>:%-%(y%)%{I%}%{Q%} P3;
+%<Prsn%:2p%>:%-s%{I%}n%{I%}z P3;

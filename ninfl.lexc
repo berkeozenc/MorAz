@@ -1,0 +1,120 @@
+Multichar_Symbols
+
+%<Nom%>
+
+%<Num%:Sg%>
+%<Num%:Pl%>
+
+%<Poss%:No%>
+%<Poss%:1s%>
+%<Poss%:2s%>
+%<Poss%:3s%>
+%<Poss%:1p%>
+%<Poss%:2p%>
+%<Poss%:3p%>
+
+
+%<Fam%>
+
+%<Case%:Nom%>
+%<Case%:Dat%>
+%<Case%:Loc%>
+%<Case%:Acc%>
+%<Case%:Abl%>
+%<Case%:Gen%>
+%<Case%:Ins%>
+
+%(y%)
+%(n%)
+%(s%)
+%(%{I%}%)
+%{I%}
+%{A%}
+%(i%)
+
+!(d|n)
+%{N%}
+%{N%}
+%<PRED%>
+
+
+LEXICON Nom'_CAT
+
+%<NOM%>: Nom';
+
+LEXICON Nom'
+
+%<Num%:Sg%>:%- Sg ;
+%<Num%:Pl%>:%-l%{A%}r Pl ;
+Nom ;
+%<AsIf%>:%-c%{A%}s%{I%}n%{A%} Adv_CAT;
+
+LEXICON Sg
+
+%<Poss%:No%>:%- Poss1 ;
+%<Poss%:1s%>:%-%(%{I%}%)m Poss1;
+%<Poss%:2s%>:%-%(%{I%}%)n Poss1 ;
+%<Poss%:No%>:%- Poss2 ;
+%<Poss%:1s%>:%-%(%{I%}%)m Poss2 ;
+%<Poss%:2s%>:%-%(%{I%}%)n Poss2 ;
+%<Poss%:3s%>:%-%(s%)%{I%}%(n%) Poss1 ;
+%<Poss%:1p%>:%-%(%{I%}%)m%{I%}z Poss1 ;
+%<Poss%:2p%>:%-%(%{I%}%)n%{I%}z Poss1 ;
+%<Poss%:2p%>:%-%(%{I%}%)z Poss1 ;
+%<Poss%:3p%>:%-l%{A%}r%{I%}%(n%) Poss1 ;
+
+LEXICON Pl
+
+%<Poss%:No%>:%- Poss1 ;
+%<Poss%:1s%>:%-%{I%}m Poss1 ;
+%<Poss%:2s%>:%-%{I%}n Poss1 ;
+%<Poss%:3s%>:%-%{I%}%(n%) Poss1 ;
+%<Poss%:1p%>:%-%{I%}m%{I%}z Poss1 ;
+%<Poss%:2p%>:%-%{I%}n%{I%}z Poss1 ;
+%<Poss%:2p%>:%-%{I%}z Poss1 ;
+%<Poss%:3p%>:%-%{I%}%(n%) Poss1 ;
+
+
+
+LEXICON Poss2
+
+%<Fam%>:%-l%{A%}r Fam ;
+Fam ;
+
+
+
+LEXICON Poss1
+
+%<Fam%>:%-gil Fam ;
+%<Fam%>:%-gillər Fam ;
+Fam;
+
+LEXICON Fam
+
+%<Case%:Nom%>:%- Case1 ;
+%<Case%:Dat%>:%-%(y%)%{A%} Case1 ;
+%<Case%:Loc%>:%-d%{A%} Case2 ;
+%<Case%:Acc%>:%-%(n%)%{I%} Case3 ;
+%<Case%:Abl%>:%-%{N%}%{A%}n Case1 ;
+%<Case%:Gen%>:%-%(n%)%{I%}n Case2 ;
+%<Case%:Ins%>:%-%(y%)%{I%}n%{A%}n Case1 ;
+%<Case%:Ins%>:%-%(i%)l%{A%} Case1 ;
+%<Case%:Nom%>%<Equ%>:%-%-c%{A%} Adv_CAT;
+
+LEXICON Case1
+
+# ;
+CaseDeriv ;
+%<PRED%>: pred;
+
+LEXICON Case2
+
+# ;
+CaseDeriv ;
+Case2Deriv ;
+%<PRED%>: pred;
+
+LEXICON Case3
+
+# ;
+

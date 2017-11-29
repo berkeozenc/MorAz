@@ -1,0 +1,462 @@
+Multichar_Symbols
+
+!POS
+
+!Infl
+%<Rflx%>
+%<Rcpr%>
+%<Caus%>
+%<Psv%>
+%<Abil%>
+%<Pol%:Pos%>
+%<Pol%:Neg%>
+%<Prbl%>
+!Tense
+%<Tns%:Imp%>
+%<Tns%:Opt%>
+%<Tns%:Cond%>
+%<Tns%:Past%>
+%<Tns%:Iprf%>
+%<Tns%:Necc%>
+%<Tns%:Fut%>
+%<Tns%:Evid%>
+%<Tns%:Pres%>
+%<Tns%:Aor%>
+%<Tns%:Narr%>
+!Person
+%<Prsn%:1s%>
+%<Prsn%:1p%>
+%<Prsn%:2s%>
+%<Prsn%:2p%>
+%<Prsn%:3s%>
+%<Prsn%:3p%>
+!Copula
+%<Cpl%:Past%>
+%<Cpl%:Aor%>
+%<Cpl%:Cond%>
+%<Cpl%:Narr%>
+!Question
+%<Q%>
+!SpecialChars
+%(%{I%}%)
+%{A%}
+%(%{A%}%)
+%{I%}
+%(y%)
+%{Q%}
+%{n%}
+%{N%}
+%{s%}
+%{D%}
+%{SPC%}
+
+LEXICON VS1_CAT
+
+%<VERB%>: VS1;
+
+LEXICON VS1
+
+%<Caus%>:%-d%{I%}r CausA ;
+%<Psv%>:%-%(%{I%}%)l Psv ;
+: VR ;
+
+LEXICON VS2_CAT
+
+%<VERB%>: VS2;
+
+LEXICON VS2
+
+%<Caus%>:%-d%{I%}r CausA ;
+%<Psv%>:%-%(%{I%}%)n Psv ;
+: VR ;
+
+
+LEXICON VS3_CAT
+
+%<VERB%>: VS3;
+
+LEXICON VS3
+
+%<Caus%>:%-%(%{I%}%)%{D%} CausB ;
+%<Psv%>:%-%(%{I%}%)l Psv ;
+: VR ;
+
+LEXICON VS4_CAT
+
+%<VERB%>: VS4;
+
+LEXICON VS4
+
+%<Caus%>:%-%(%{I%}%)%{D%} CausB ;
+%<Psv%>:%-%(%{I%}%)n Psv ;
+: VR ;
+
+LEXICON VS5_CAT
+
+%<VERB%>: VS5;
+
+LEXICON VS5
+
+%<Caus%>:%-%{I%}r CausA ;
+%<Psv%>:%-%(%{I%}%)l Psv ;
+: VR ;
+
+LEXICON VS6_CAT
+
+%<VERB%>: VS6;
+
+LEXICON VS6
+
+%<Caus%>:%-%{I%}r CausA ;
+%<Psv%>:%-%(%{I%}%)n Psv ;
+: VR ;
+
+LEXICON VS7_CAT
+
+%<VERB%>: VS7;
+
+LEXICON VS7
+
+%<Caus%>:%-%{A%}r CausA ;
+%<Psv%>:%-%(%{I%}%)l Psv ;
+: VR ;
+
+LEXICON VS8_CAT
+
+%<VERB%>: VS8;
+
+LEXICON VS8
+
+%<Caus%>:%-%{A%}r CausA ;
+%<Psv%>:%-%(%{I%}%)n Psv ;
+: VR ;
+
+LEXICON VS9_CAT
+
+%<VERB%>: VS9;
+
+LEXICON VS9
+
+%<Psv%>:%-%(%{I%}%)l Psv ;
+: VR ;
+
+LEXICON VS10_CAT
+
+%<VERB%>: VS10;
+
+LEXICON VS10
+
+%<Psv%>:%-%(%{I%}%)n Psv ;
+: VR ;
+
+LEXICON VS11_CAT
+
+%<VERB%>: VS11;
+
+LEXICON VS11
+
+%<Caus%>:%-d%{I%}r CausA ;
+: VR ;
+
+LEXICON VS12_CAT
+
+%<VERB%>: VS12;
+
+LEXICON VS12
+
+%<Caus%>:%-%(%{I%}%)%{D%} CausB ;
+: VR ;
+
+LEXICON VS13_CAT
+
+%<VERB%>: VS13;
+
+LEXICON VS13
+
+%<Caus%>:%-%{I%}r CausA ;
+: VR ;
+
+LEXICON VS14_CAT
+
+%<VERB%>: VS14;
+
+LEXICON VS14
+
+%<Caus%>:%-%{A%}r CausA ;
+: VR ;
+
+LEXICON VS15_CAT
+
+%<VERB%>: VS15;
+
+LEXICON VS15
+
+%: VR ;
+
+LEXICON VR
+
+%<Rflx%>:%-%(%{I%}%)n RaR ;
+%<Rcpr%>:%-%(%{I%}%)ş RaR ;
+APP ;
+
+
+LEXICON RaR
+
+%<Caus%>:%-d%{I%}r CausA ;
+%<Psv%>:%-%{I%}l Psv ;
+APP ;
+
+
+LEXICON CausA
+
+%<Psv%>:%-%{I%}l Psv ;
+APP ;
+%<Caus%>:%-%{D%} CausB ;
+
+LEXICON CausB
+
+%<Psv%>:%-%{I%}l Psv ;
+APP ;
+%<Caus%>:%-t%{I%}r CausA ;
+
+
+LEXICON Psv
+
+APP ;
+
+LEXICON APP
+
+%<Abil%>:%-%(y%)%{A%}%{SPC%}bil Abil+ ;
+%<Abil%>:%-%(y%)%{A%}n Abil- ;
+%<Abil%>:%-%(y%)%{A%}%{SPC%}bilen Abil- ;
+%<Pol%:Pos%>:%- Pol3 ;
+%<Pol%:Neg%>:%-m%(%{A%}%) Pol2 ;
+
+LEXICON Abil+
+
+%<Pol%:Pos%>:%- Pol1 ;
+%<Pol%:Neg%>:%-m%(%{A%}%) Pol2 ;
+
+LEXICON Abil-
+
+%<Pol%:Neg%>:%-m%(%{A%}%) Pol2 ;
+
+LEXICON Pol1
+
+TAMP1 ;
+TAMP3 ;
+
+LEXICON Pol2
+
+%<Prbl%>:%-y%{A%}bil Prbl ;
+TAMP1 ;
+TAMP2 ;
+
+LEXICON Pol3
+TAMP1 ;
+TAMP3 ;
+%<Prbl%>:%-y%{A%}bil Prbl ;
+
+LEXICON Prbl
+
+TAMP1 ;
+TAMP3 ;
+
+LEXICON TAMP3
+
+%<Tns%:Aor%>:%-%(y%)%{A%}r T5;
+TAMP3Deriv ;
+
+LEXICON TAMP2
+
+%<Tns%:Aor%>:%-%r T9;
+%<Tns%:Aor%>:%-z T10;
+TAMP2Deriv ;
+
+LEXICON T9
+
+%<Prsn%:1s%>:%-%{A%}m P2 ;
+%<Prsn%:1p%>:%-%{I%}%{Q%} P2 ;
+
+LEXICON T10
+
+%<Prsn%:2s%>:%-s%{A%}n P2 ;
+%<Prsn%:3s%>:%- P2 ;
+%<Prsn%:2p%>:%-s%{I%}n%{I%}z P2 ;
+%<Prsn%:3p%>:%-l%{A%}r P2 ;
+%<Cpl%:Narr%>:%-m%{I%}ş C6 ;
+
+
+LEXICON TAMP1
+
+%<Tns%:Imp%>:%- T1 ;
+%<Tns%:Opt%>:%-%(y%)%{A%} T2;
+%<Tns%:Cond%>:%-s%{A%} T3;
+%<Tns%:Evid%>:%-%(y%)%{I%}b T4;
+%<Tns%:Pres%>:%-%(y%)%{I%}r T5;
+%<Tns%:Narr%>:%-m%{I%}ş T5;
+%<Tns%:Past%>:%-d%{I%} T6;
+%<Tns%:Necc%>:%-m%{A%}l%{I%} T7;
+%<Tns%:Iprf%>:%-m%{A%}%{Q%}d%{A%} T7;
+%<Tns%:Fut%>:%-%(y%)%{A%}c%{A%}%{Q%} T8;
+TAMP1Deriv ;
+
+
+LEXICON T1
+
+%<Prsn%:1s%>:%-%(y%)%{I%}m P4;
+%<Prsn%:1p%>:%-%(y%)%{A%}q P4;
+%<Prsn%:2s%>:%- P4;
+%<Prsn%:2p%>:%-%(y%)%{I%}n P4;
+%<Prsn%:3s%>:%-s%{I%}n P4;
+%<Prsn%:3p%>:%-s%{I%}nl%{A%}r P4;
+
+LEXICON P4
+
+#;
+
+LEXICON T2
+
+%<Prsn%:1s%>:%-m P1;
+%<Prsn%:2s%>:%-s%{A%}n P1;
+%<Prsn%:3s%>:%- P1;
+%<Prsn%:1p%>:%-q P1;
+%<Prsn%:2p%>:%-s%{I%}n%{I%}z P1;
+%<Prsn%:3p%>:%-l%{A%}r P1;
+
+LEXICON T3
+%<Cpl%:Past%>:%-yd%{I%} C1;
+%<Cpl%:Narr%>:%-ym%{I%}ş C2;
+%<Prsn%:1s%>:%-m P1;
+%<Prsn%:2s%>:%-n P1;
+%<Prsn%:3s%>:%- P1;
+%<Prsn%:1p%>:%-q P1;
+%<Prsn%:2p%>:%-n%{I%}z P1;
+%<Prsn%:3p%>:%-l%{A%}r P1;
+
+LEXICON C1
+
+%<Prsn%:1s%>:%-m P1;
+%<Prsn%:2s%>:%-n P1;
+%<Prsn%:3s%>:%- P1;
+%<Prsn%:1p%>:%-q P1;
+%<Prsn%:2p%>:%-n%{I%}z P1;
+%<Prsn%:3p%>:%-l%{A%}r P1;
+
+LEXICON C2
+
+%<Prsn%:1s%>:%-%{A%}m P1;
+%<Prsn%:2s%>:%-s%{A%}n P1;
+%<Prsn%:3s%>:%- P1;
+%<Prsn%:1p%>:%-%{I%}%{Q%} P1;
+%<Prsn%:2p%>:%-s%{I%}n%{I%}z P1;
+%<Prsn%:3p%>:%-l%{A%}r P1;
+
+LEXICON T4
+%<Cpl%:Aor%>:%-d%{I%}r C4;
+%<Cpl%:Narr%>:%-m%{I%}ş C5;
+%<Prsn%:2s%>:%-s%{A%}n P2;
+%<Prsn%:3s%>:%- P2;
+%<Prsn%:2p%>:%-s%{I%}n%{I%}z P2;
+%<Prsn%:3p%>:%-l%{A%}r P2;
+
+LEXICON C4
+
+%<Prsn%:3s%>:%- P3;
+%<Prsn%:3p%>:%-l%{A%}r P3;
+
+LEXICON C5
+
+%<Prsn%:2s%>:%-s%{A%}n P3;
+%<Prsn%:3s%>:%- P3;
+%<Prsn%:2p%>:%-s%{I%}n%{I%}z P3;
+%<Prsn%:3p%>:%-l%{A%}r P3;
+
+LEXICON P2
+
+%<Q%>:%-%{SPC%}m%{I%} Q;
+# ;
+%<Cpl%:Cond%>:%-s%{A%} C7;
+%<Cpl%:Narr%>:%-m%{I%}ş C3;
+%<AsIf%>:%-c%{A%}s%{I%}n%{A%} Adv_CAT;
+
+LEXICON C7
+
+# ;
+
+LEXICON C3
+
+# ;
+%<Cpl%:Cond%>:%-s%{A%} C7;
+
+LEXICON T5
+
+%<Prsn%:1s%>:%-%{A%}m P2;
+%<Prsn%:2s%>:%-s%{A%}n P2;
+%<Prsn%:3s%>:%- P2;
+%<Prsn%:1p%>:%-%{I%}%{Q%} P2;
+%<Prsn%:2p%>:%-s%{I%}n%{I%}z P2;
+%<Prsn%:3p%>:%-l%{A%}r P2;
+%<Cpl%:Narr%>:%-m%{I%}ş C6;
+
+
+
+LEXICON P3
+
+%<Q%>:%-%{SPC%}m%{I%} Q;
+# ;
+%<Cpl%:Cond%>:%-s%{A%} C7;
+%<AsIf%>:%-c%{A%}s%{I%}n%{A%} Adv_CAT;
+
+LEXICON T6
+
+%<Prsn%:1s%>:%-m P3;
+%<Prsn%:2s%>:%-n P3;
+%<Prsn%:3s%>:%- P3;
+%<Prsn%:1p%>:%-%{Q%} P3;
+%<Prsn%:2p%>:%-n%{I%}z P3;
+%<Prsn%:3p%>:%-l%{A%}r P3;
+
+LEXICON T7
+
+%<Prsn%:1s%>:%-%(y%)%{A%}m P3;
+%<Prsn%:2s%>:%-s%{A%}n P3;
+%<Prsn%:1p%>:%-%(y%)%{I%}%{Q%} P3;
+%<Prsn%:2p%>:%-s%{I%}n%{I%}z P3;
+%<Cpl%:Aor%>:%-d%{I%}r C4;
+%<Cpl%:Narr%>:%-ym%{I%}ş C6;
+
+LEXICON C6
+
+%<Prsn%:1s%>:%-%{A%}m P3;
+%<Prsn%:2s%>:%-s%{A%}n P3;
+%<Prsn%:3s%>:%- P3;
+%<Prsn%:1p%>:%-%{I%}%{Q%} P3;
+%<Prsn%:2p%>:%-s%{I%}n%{I%}z P3;
+%<Prsn%:3p%>:%-l%{A%}r P3;
+
+
+
+LEXICON T8
+
+%<Cpl%:Narr%>:%-m%{I%}ş C6;
+%<Cpl%:Aor%>:%-d%{I%}r C4;
+%<Prsn%:1s%>:%-%{A%}m P3;
+%<Prsn%:2s%>:%-s%{A%}n P3;
+%<Prsn%:3s%>:%- P3;
+%<Prsn%:1p%>:%-%{I%}%{Q%} P3;
+%<Prsn%:2p%>:%-s%{I%}n%{I%}z P3;
+%<Prsn%:3p%>:%-l%{A%}r P3;
+
+
+
+
+LEXICON P1
+
+%<Q%>:%-%{SPC%}m%{I%} Q;
+%<AsIf%>:%-c%{A%}s%{I%}n%{A%} Adv_CAT;
+# ;
+
+LEXICON Q
+
+#;
