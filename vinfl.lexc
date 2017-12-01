@@ -50,146 +50,146 @@ Multichar_Symbols
 %{D%}
 %{SPC%}
 
-LEXICON VS1_CAT
+LEXICON VC1_CAT
 
-%<VERB%>: VS1;
+%<VERB%>: VC1;
 
-LEXICON VS1
+LEXICON VC1
 
 %<Caus%>:%-d%{I%}r CausA ;
 %<Psv%>:%-%(%{I%}%)l Psv ;
 : VR ;
 
-LEXICON VS2_CAT
+LEXICON VC2_CAT
 
-%<VERB%>: VS2;
+%<VERB%>: VC2;
 
-LEXICON VS2
+LEXICON VC2
 
 %<Caus%>:%-d%{I%}r CausA ;
 %<Psv%>:%-%(%{I%}%)n Psv ;
 : VR ;
 
 
-LEXICON VS3_CAT
+LEXICON VC3_CAT
 
-%<VERB%>: VS3;
+%<VERB%>: VC3;
 
-LEXICON VS3
+LEXICON VC3
 
 %<Caus%>:%-%(%{I%}%)%{D%} CausB ;
 %<Psv%>:%-%(%{I%}%)l Psv ;
 : VR ;
 
-LEXICON VS4_CAT
+LEXICON VC4_CAT
 
-%<VERB%>: VS4;
+%<VERB%>: VC4;
 
-LEXICON VS4
+LEXICON VC4
 
 %<Caus%>:%-%(%{I%}%)%{D%} CausB ;
 %<Psv%>:%-%(%{I%}%)n Psv ;
 : VR ;
 
-LEXICON VS5_CAT
+LEXICON VC5_CAT
 
-%<VERB%>: VS5;
+%<VERB%>: VC5;
 
-LEXICON VS5
+LEXICON VC5
 
 %<Caus%>:%-%{I%}r CausA ;
 %<Psv%>:%-%(%{I%}%)l Psv ;
 : VR ;
 
-LEXICON VS6_CAT
+LEXICON VC6_CAT
 
-%<VERB%>: VS6;
+%<VERB%>: VC6;
 
-LEXICON VS6
+LEXICON VC6
 
 %<Caus%>:%-%{I%}r CausA ;
 %<Psv%>:%-%(%{I%}%)n Psv ;
 : VR ;
 
-LEXICON VS7_CAT
+LEXICON VC7_CAT
 
-%<VERB%>: VS7;
+%<VERB%>: VC7;
 
-LEXICON VS7
+LEXICON VC7
 
 %<Caus%>:%-%{A%}r CausA ;
 %<Psv%>:%-%(%{I%}%)l Psv ;
 : VR ;
 
-LEXICON VS8_CAT
+LEXICON VC8_CAT
 
-%<VERB%>: VS8;
+%<VERB%>: VC8;
 
-LEXICON VS8
+LEXICON VC8
 
 %<Caus%>:%-%{A%}r CausA ;
 %<Psv%>:%-%(%{I%}%)n Psv ;
 : VR ;
 
-LEXICON VS9_CAT
+LEXICON VC9_CAT
 
-%<VERB%>: VS9;
+%<VERB%>: VC9;
 
-LEXICON VS9
+LEXICON VC9
 
 %<Psv%>:%-%(%{I%}%)l Psv ;
 : VR ;
 
-LEXICON VS10_CAT
+LEXICON VC10_CAT
 
-%<VERB%>: VS10;
+%<VERB%>: VC10;
 
-LEXICON VS10
+LEXICON VC10
 
 %<Psv%>:%-%(%{I%}%)n Psv ;
 : VR ;
 
-LEXICON VS11_CAT
+LEXICON VC11_CAT
 
-%<VERB%>: VS11;
+%<VERB%>: VC11;
 
-LEXICON VS11
+LEXICON VC11
 
 %<Caus%>:%-d%{I%}r CausA ;
 : VR ;
 
-LEXICON VS12_CAT
+LEXICON VC12_CAT
 
-%<VERB%>: VS12;
+%<VERB%>: VC12;
 
-LEXICON VS12
+LEXICON VC12
 
 %<Caus%>:%-%(%{I%}%)%{D%} CausB ;
 : VR ;
 
-LEXICON VS13_CAT
+LEXICON VC13_CAT
 
-%<VERB%>: VS13;
+%<VERB%>: VC13;
 
-LEXICON VS13
+LEXICON VC13
 
 %<Caus%>:%-%{I%}r CausA ;
 : VR ;
 
-LEXICON VS14_CAT
+LEXICON VC14_CAT
 
-%<VERB%>: VS14;
+%<VERB%>: VC14;
 
-LEXICON VS14
+LEXICON VC14
 
 %<Caus%>:%-%{A%}r CausA ;
 : VR ;
 
-LEXICON VS15_CAT
+LEXICON VC15_CAT
 
-%<VERB%>: VS15;
+%<VERB%>: VC15;
 
-LEXICON VS15
+LEXICON VC15
 
 %: VR ;
 
