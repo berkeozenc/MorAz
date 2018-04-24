@@ -36,17 +36,29 @@ Multichar_Symbols
 %{N%}
 %{N%}
 %<PRED%>
+%<NOMP%>
 
 
-LEXICON Nom'_CAT
+LEXICON Nom'_CAT 
 
 %<NOM%>: Nom';
+
+LEXICON Nomp'_CAT 
+
+%<NOMP%>: Nom';
 
 LEXICON Nom'
 
 %<Num%:Sg%>:%- Sg ;
 %<Num%:Pl%>:%-l%{A%}r Pl ;
 Nom ;
+%<AsIf%>:%-c%{A%}s%{I%}n%{A%} Adv_CAT;
+
+LEXICON Nomp'
+
+%<Num%:Sg%>:%- Sg ;
+%<Num%:Pl%>:%-l%{A%}r Pl ;
+Nomp ;
 %<AsIf%>:%-c%{A%}s%{I%}n%{A%} Adv_CAT;
 
 LEXICON Sg
@@ -95,7 +107,7 @@ LEXICON Fam
 %<Case%:Dat%>:%-%(y%)%{A%} Case1 ;
 %<Case%:Loc%>:%-d%{A%} Case2 ;
 %<Case%:Acc%>:%-%(n%)%{I%} Case3 ;
-%<Case%:Abl%>:%-%{N%}%{A%}n Case1 ;
+%<Case%:Abl%>:%-d%{A%}n Case1 ;
 %<Case%:Gen%>:%-%(n%)%{I%}n Case2 ;
 %<Case%:Ins%>:%-%(y%)%{I%}n%{A%}n Case1 ;
 %<Case%:Ins%>:%-%(i%)l%{A%} Case1 ;

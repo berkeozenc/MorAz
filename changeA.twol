@@ -5,7 +5,6 @@ a b c ç d e f g ğ h ı i j k l m n o ö p r s ş t u ü v y z q ə x
 %{A%}
 %{I%}
 %{Q%}
-%{N%}
 %{C%}
 %{D%}
 %{K%}
@@ -32,14 +31,14 @@ beforeBackA = B C Ç D F G Ğ H J K L M N P R S Ş T V Y Z X Q
 				b c ç d f g ğ h j k l m n p r s ş t v y z x q
 				A I O U 
 				a ı o u
-				%{I%} %{A%} %{Q%} %{N%} %{C%} %{SPC%} %{D%} %{K%}
+				%{I%} %{A%} %{Q%} %{C%} %{SPC%} %{D%} %{K%}
 				%-;
 
 beforeFrontA = B C Ç D F G Ğ H J K L M N P R S Ş T V Y Z X Q
 				b c ç d f g ğ h j k l m n p r s ş t v y z x q
 				E İ Ö Ü Ə
 				e i ö ü ə
-				%{I%} %{A%} %{Q%} %{N%} %{C%} %{SPC%} %{D%} %{K%}
+				%{I%} %{A%} %{Q%} %{C%} %{SPC%} %{D%} %{K%}
 				%-;
 
 Rules
